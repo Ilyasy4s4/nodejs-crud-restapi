@@ -2,7 +2,7 @@ import db from "../config/db.js";
 
 // menampilkan semua kategori
 export const getCategories = (req, res) => {
-  db.query("SELECT * FROM categories", (err, results) => {
+  db.query("SELECT *  FROM categories", (err, results) => {
     if (err) {
       return res.status(500).json({ message: err });
     }
